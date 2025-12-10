@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flaschencounter – Weihnachtskonzert</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: #880101;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 20px;
+            backdrop-filter: blur(6px);
+            max-width: 500px;
+            margin: 0 auto;
+            box-shadow: 0 0 20px rgba(0,0,0,0.4);
+        }
+
+        h1 {
+            font-size: 2.3rem;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.2rem;
+        }
+
+        .counter-display {
+            font-size: 4rem;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+
+        button {
+            font-size: 2rem;
+            width: 70px;
+            height: 70px;
+            margin: 10px;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            background: white;
+            color: #b30000;
+            font-weight: bold;
+            transition: transform 0.15s, box-shadow 0.2s;
+        }
+
+        button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 10px rgba(255,255,255,0.5);
+        }
+
+        button:active {
+            transform: scale(0.95);
+        }
+
+        .footer {
+            margin-top: 40px;
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <h1>🎄 Flaschencounter</h1>
+        <p>Wie viele Flaschen sind beim Weihnachtskonzert umgefallen?</p>
+
+        <div id="counter-value" class="counter-display">0</div>
+
+        <button id="increment-value">+</button>
+        <button id="decrement-value">−</button>
+    </div>
+
+    <script src="counter.js"></script>
+</body>
+</html>
